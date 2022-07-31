@@ -32,7 +32,7 @@ class Console{
 
     static public function template( string $name ){
 
-        return dirname( __DIR__ ) . '/templates/doton.visualkit.' . $name . '.tpl';
+        return dirname( __DIR__ ) . '/templates/doton.visualkit.' . $name . '.htm';
         
     }
     
@@ -76,25 +76,25 @@ class Console{
 
     }
 
-    static public function getColor( string $type ){
+    // static public function getColor( string $type ){
         
-        switch( $type ){
+    //     switch( $type ){
 
-            case 'log': return '#8200BA';
+    //         case 'log': return '#8200BA';
 
-            case 'info': return '#525252';
+    //         case 'info': return '#525252';
 
-            case 'notice': return '#005DBA';
+    //         case 'notice': return '#005DBA';
 
-            case 'warning': return '#918D01';
+    //         case 'warning': return '#918D01';
 
-            case 'error': return '#BA002B';
+    //         case 'error': return '#BA002B';
 
-            case 'success': return '#00BA60';
+    //         case 'success': return '#00BA60';
 
-        }
+    //     }
 
-    }
+    // }
 
 
 
@@ -124,7 +124,7 @@ class Console{
         if( !$isterminal ){
 
 
-            $color = self::getColor( $type ?: '' );
+            $color = Color::get( $type ?: '' );
 
             $template = new CoreAssetsTemplate(
                 

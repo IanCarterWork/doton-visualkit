@@ -1,0 +1,8 @@
+{
+    "name": "doton.visualkit",
+    "namespace": "VisualKit",
+    "version": "0.0.1",
+    "description": "",
+    "dependencies":{},
+    "devDependencies":{}
+}
